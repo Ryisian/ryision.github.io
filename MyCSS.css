@@ -6,11 +6,28 @@
 }
 
 .l{
+	text-shadow: 2px 2px 4px #806969;
     position: relative;
     font-size: 50px;
     font-family:'Tourney', cursive;;
     color: beige;
-    top:10px
+    top:10px;
+	animation: mymove 3s;
+	animation-fill-mode:forwards ;
+}
+
+@keyframes mymove {
+	from {left: 0px;}
+	to {left: 62px;}
+}	
+
+@keyframes fadeIn {
+	0% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:1;
+	}
 }
 
 body {
@@ -32,6 +49,8 @@ header {
 	float: right;
 	list-style: none;
 	margin-top: 30px;
+	animation: fadeIn 5s;
+
 }
 .nav-area li {
 	display: inline-block;
@@ -47,9 +66,13 @@ header {
 .nav-area li a:hover {
 	background: #fff;
 	color: #333;
+	border-radius: 50px;
 }
 .logo {
 	float: left;
+	left: 40px;
+	position:relative;
+	left: -24px;
 }
 .logo img {
 	width: 100%;
@@ -61,9 +84,17 @@ header {
 	right: -25px;
 	height: 300px;
 	margin: 20% 30%;
+	animation: fadeIn 3s;
 	text-align: center;
 }
+
+.b{
+	border-radius: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .welcome-text h1 {
+	text-shadow: 2px 2px 4px #000000;
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
